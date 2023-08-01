@@ -130,7 +130,7 @@ body {
   @media only screen and (max-width: 768px) {
     .about-password {
       margin-top: 30px;
-      width: 75%; /* Decrease width for smaller screens */
+      width: 80%; /* Decrease width for smaller screens */
       max-width: 300px; /* Adjust the maximum width for smaller screens */
     }
   }
@@ -140,7 +140,7 @@ body {
     margin-top:auto;
     font-size: 170%; /* Set the font size to adjust the size of the emoji */
     display: inline-block; /* Display the emoji as a block element */
-    padding: 5px; /* Add padding to create the solid border around the emoji */
+    padding: 10px; /* Add padding to create the solid border around the emoji */
     border: 2px solid #c5c5c5; /* Solid border with 2px width around the emoji */
     border-radius: 50%; /* Border radius to create a circle around the emoji */
   }

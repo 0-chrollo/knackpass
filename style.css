@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hwb(0 93% 7% / 0.541);
+    color: #424242;
+    padding: 10px;
+    position: relative; /* Add position relative to define stacking context */
+    z-index: 1; /* Add z-index to ensure the navbar is on top */
+
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.login , .register{
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.8px solid #4d4d4d8d;
+    border-radius: 5px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.line {
+    width: 20px;
+    height: 2.5px;
+    background-color:#424242;
+    margin: 4px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+}
+
+.nav-links li {
+    padding: 10px;
+    position: relative; /* Add position relative to position the arrow icon */
+}
+
+.nav-links li a {
+    color: #424242;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 95px;
+        left: 45px;
+        background-color: hwb(0 85% 15%);
+        width: 80%;
+        z-index: 100; /* Adjust the z-index to make the nav-links appear above the background */
+    }
+
+    .nav-links li {
+        padding: 17px;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        color: #424242;
+    }
+
+    .nav-links li .arrow {
+        position: absolute;
+        right: 35px; /* Adjust this value to position the arrow as per your preference */
+        font-size: 15px;
+        color: #5b5b5b;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.site-intro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    color: #295580; /* Removed transparency */
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom:0px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 12px;
+    color: #6e6e6e; /* Removed transparency */
+    line-height: 1.9;
+}
+
+/* Add a subtle animation */
+h1, p {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Changed from opacity: 7; to opacity: 1; */
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/****************************************************/
+/*A Pulsing chat Widget at The Bottom of The Body */
+/* Floating Chat Button Styles */
+
+.chat-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color:#295480cb;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Ensure the button is above other content */
+    animation: pulseEffect 2s infinite; /* Add the pulsing animation */
+}
+
+@keyframes pulseEffect {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 6px 10px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.chat-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color:  #ececece6;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* Customize the bot icon's appearance */
+.fa-robot::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f544"; /* Unicode for the bot icon */
+}
+/****************************************************************/
+
+
+
+
+
+
+.cont{
+ 
+  font-family:'Franklin Gothic Medium';
+}

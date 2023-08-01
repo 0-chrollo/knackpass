@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hwb(0 93% 7% / 0.541);
+    color: #424242;
+    padding: 10px;
+    position: relative; /* Add position relative to define stacking context */
+    z-index: 1; /* Add z-index to ensure the navbar is on top */
+
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+   
+}
+
+.company-name {
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.line {
+    width: 20px;
+    height: 2.5px;
+    background-color:#424242;
+    margin: 4px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 10px;
+    position: relative; /* Add position relative to position the arrow icon */
+}
+
+.nav-links li a {
+    color: #424242;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        background-color: hwb(0 85% 15%);
+        width: 80%;
+        z-index: 100; /* Adjust the z-index to make the nav-links appear above the background */
+    }
+
+    .nav-links li {
+        padding: 14px;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        color: #424242;
+    }
+
+    .nav-links li .arrow {
+        position: absolute;
+        right: 35px; /* Adjust this value to position the arrow as per your preference */
+        font-size: 15px;
+        color: #5b5b5b;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tool.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js"></script>
+
+    <title>TulProse-Tools</title>
+</head>
+<body>
+    <nav class="navbar">
+
+      
+        <div class="logo">
+          <a href="index.html">
+            <i class="fa fa-angle-left" style="color:#000000; font-size: 23px;"></i>
+          </a>
+      
+            <span class="company-name" style=" border: 3px solid #adadad; border-radius: 15px;margin-right: 11rem;">-kp-</span>
+        </div>
+        <div class="menu">
+           
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">About <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">Services <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">Contact <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+        </ul>
+
+        <style>
+          /* Keyframes for the slide-in animation */
+          @keyframes slideInFromRight {
+            0% {
+              opacity: 0;
+              transform: translateX(100%);
+            }
+            100% {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+      
+          /* Styles for the main content area */
+          main.about {
+            margin-top: 50px;
+            text-align: center;
+          }
+      
+          h1 {
+            font-size: 28px;
+            color: #295580; /* Removed transparency */
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom:0px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
+            font-size: 28px;
+            animation: slideInFromRight 1s ease;
+
+          }
+      
+          h3 {
+            font-size: 18px;
+            opacity: 0.8;
+        
+          }
+      
+          .view-tools-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 9px 14px;
+            background-color:#295480d8; 
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            opacity: 0.9;
+           
+          }
+        </style>
+      </head>
+     
+        <main class="about">
+          <h1>KnackPass Tools</h1><br>
+          <h3>Our tools are worthy and powerful, designed to simplify all of your tasks and more😉..</h3>
+          <a href="#" class="view-tools-btn">View Tools Below</a>
+
+
+          <h5 align="center" style="font-size: 20px; color: #1d4369;">
+          
+            <i class="fa fa-angle-down"></i>
+            
+          </h5>
+
+
+        </main>
+
+
+
+        <style>
+          /* Define the animation */
+          @keyframes floatUpDown {
+            0%, 100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-13px); /* Adjust this value for the desired float distance */
+            }
+          }
+      
+          /* Apply the animation to the <h5> element */
+          h5 {
+            animation: floatUpDown 1s infinite; /* Adjust the animation duration as needed */
+          }
+        </style>
+
+        
+<section class="Tools">
+
+  <div class="container">
+    <div class="card">
+      <h2 class="emoji" style="font-size: 25px;">🔐</h2>
+      <h4 style="font-size: 14px;">Password Generator</h4>
+
+      <a href="pass.html" style="color: #295580; text-decoration: none;">
+        View Tool <i class="fas fa-arrow-right"></i>
+      </a>
+      
+  
+
+    </div>
+    <div class="card">
+      <h2 class="emoji" style="font-size: 25px;">🛡️</h2>
+      <h4 style="font-size: 14px;">Password Enhancer</h4>
+      <a href="#" style="color: #295580; text-decoration: none;">
+        View Tool <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  
+
+
+  <div class="container">
+    <div class="card">
+      <h2 class="emoji" style="font-size: 25px;">🎵</h2>
+      <h4 style="font-size: 14px;">Mp4 to Mp3</h4>
+
+      <a href="#" style="color:#295580; text-decoration: none;">
+        View Tool <i class="fas fa-arrow-right"></i>
+      </a>
+      
+  
+
+    </div>
+    <div class="card">
+      <h2 class="emoji" style="font-size: 25px;">🔒💪</h2>
+      <h4 style="font-size: 13.6px;">Password Strength Eye</h4>
+      <a href="#" style="color: #295580; text-decoration: none;">
+        View Tool <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+  
+
+</section>
+
+<style>
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Gap between the cards */
+  flex-wrap:nowrap; /* To ensure cards wrap to the next line on smaller screens */
+}
+
+/* Style for each card */
+.card {
+  background-color: #dbdbdb81;
+  max-width: 35%; /* Maximum width for the cards */
+  width: 100%; /* Ensure the cards take full width of the container */
+  border: 1px solid #c4c4c46f; /* Solid border */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow */
+  padding: 14px;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+</style>
+
+
+
+
+
+
+<footer style="background-color: #d8d8d8; color: #3d3d3d; padding: 1px 1px; text-align: center; margin-top: 100px;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h3 style="color: #3b3b3b;">KnackPass</h3>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 1px;">
+      <a href="#" style="color: #343434; text-decoration: none; margin: 0 15px; font-size: 24px;">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" style="color: #4b4b4b; text-decoration: none; margin: 0 80px; font-size: 24px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" style="color: #3b3b3b; text-decoration: none; margin: 0 15px; font-size: 24px;">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p style="font-size: 12px; opacity: 0.8; margin-top: 10px;">&copy; 2023 KnackPass. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+      </body>
+
+</html>

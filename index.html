@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js"></script>
+
+    <title>TulProse-Home</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="company-name" style=" border: 3px solid #adadad; border-radius: 15px;">-kp-</span>
+        </div>
+        <div class="menu">
+            <span class="register" >Register</span>
+        <span class="login" > <a href="login.html" style="color: black; text-decoration: none;">Login</a></span>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+    
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li class="cont"><a href="tools.html">Tools <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">Contact <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li class="cont"><a href="contributions.html"> Contributions <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="policy.html"> Privacy Policy<span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li class="cont"><a href="contributions.html">Licences<span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+        </ul>
+    
+
+    <!-- Your page content goes here -->
+    <main>
+        <div class="site-intro">
+            <h1>KnackPass</h1>
+            <p><i class="fas fa-check-circle" style="color: black;margin-right: 8px;"></i> Efficient. User-Friendly.</p>
+            <p><i class="fas fa-lock" style="color: black;margin-right: 8px;"></i> End-to-End Encrypted. Secured.</p>
+            <p><i class="fas fa-tools" style="color: black;margin-right: 8px;"></i> Productivity and Security Tools.</p>
+            <p><i class="fas fa-hourglass-half" style="color: black;margin-right: 8px;"></i> Save Time and Effort.</p>
+
+
+  <i class="fas fa-arrow-circle-down" style="color: rgb(102, 102, 102);font-size: 13px;"></i>
+  <h5 align="center" style="color: #043d91; margin: 0 10px;">------------------</h5>
+  <i class="fas fa-arrow-circle-down" style="color: rgb(121, 121, 121);font-size: 13px;"></i>
+
+
+
+             <p><i class="fas fa-rocket" style="color: black; margin-right: 8px;"></i> Seamless Integration.</p>
+             <p><i class="fas fa-robot" style="color: black;margin-right: 8px;"></i> With AI Embedded Tools.</p>
+             <p><i class="fas fa-magic" style="color: black;margin-right: 8px;"></i> Intuitive Interface.</p>
+             <p><i class="fas fa-shield-alt" style="color: black;margin-right: 8px;"></i> End-to-End Encrypted.</p>
+             
+            <div class="button-container">
+                <button class="blue-button">
+                   How to <i class="fas fa-question" style="font-size: 11.5px;margin-left: 3px"></i>
+                </button>
+                <a href="tools.html" class="blue-button" style="margin-left: 90px; text-decoration: none;">
+                  Tools <i class="fas fa-tools" style="font-size: 12px; margin-left: 4px;"></i>
+                </a><br><br>
+                
+            </div><br>
+
+
+        </div>
+    
+       
+        <style>
+            .button-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+        
+            .blue-button {
+                background-color:#295480cb;
+                color: white;
+                border: none;
+                border-radius: 7px;
+                padding: 8.5px 15px;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+            }
+        
+            .blue-button i {
+                margin-right: 0px;
+            }
+        </style>
+         
+
+    </main>
+
+
+
+
+
+    <style>
+        section {
+        
+          position: relative;
+          text-align: center;
+          border: 2px solid #8b8b8b4f;
+          border-radius: 10px;
+          padding: 7px;
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 40px;
+        }
+    
+        .navigation-icons {
+          position: absolute;
+          top: 50%;
+          left: -29px;
+          transform: translateY(-50%);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 180px;
+          color: aliceblue;
+        }
+    
+        .navigation-icons div {
+            background-color:  #295480cb;
+          border: 1px solid #000;
+          border-radius: 100%;
+          padding: 7px;
+        }
+    
+        .emoji-container {
+            background-color: #7a7a7a91;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #adadad;
+          width: 65px;
+          height: 62px;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+    
+        .emoji {
+          font-size: 48px;
+          
+
+        }
+
+      </style>
+    </head>
+    <body>
+      <section>
+        <div class="navigation-icons">
+          <div style="margin-bottom: 5px;">
+            <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+          </div>
+          <div style="margin-top: 5px;">
+            <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+          </div>
+        </div>
+        <div class="emoji-container">
+          <div class="emoji">🤔</div>
+        </div>
+        <h4 style="color: #7a7a7a; font-size: 13.5px;">Why would you even consider using KnackPass Tools?</h4>
+        <div style="margin-top: 25px;">
+          <button onclick="showPopup()" style="border: 0.8px solid #a2a2a2; padding: 8px 15px; background-color: #295480cb; border-radius: 5px; cursor: pointer; color: rgb(221, 221, 221); font-size: 12px;">View Answer !</button>
+        </div>
+
+
+
+     <!--Second-->
+
+      </section><br>
+    
+
+<section class="second">
+
+      <div class="navigatio-icons">
+        <div style="margin-bottom: 5px;">
+          <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+        </div>
+        <div style="margin-top: 5px;">
+          <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+        </div>
+      </div>
+      <div class="emoj-container">
+        <div class="emoji">😄</div>
+
+      </div>
+      <h4 style="color: #0d2945ad; font-size: 14px;">What separates our tools from the others?</h4>
+      <div style="margin-top: 25px;">
+        <button onclick="showPopup()" style="border: 0.8px solid #a2a2a2; padding: 8px 15px; background-color: #7a7a7a;border-radius: 5px; cursor: pointer; color: rgb(221, 221, 221); font-size: 12px;">View Answer !</button>
+      </div>
+
+<style>
+
+.second {
+          position: relative;
+          text-align: center;
+          border: 2px solid  #295480a9;
+          border-radius: 10px;
+          padding: 7px;
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 40px;
+        }
+
+
+
+
+.navigatio-icons {
+          position: absolute;
+          top: 50%;
+          left: -29px;
+          transform: translateY(-50%);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 180px;
+          color: aliceblue;
+        }
+    
+        .navigatio-icons div {
+            background-color:  #7a7a7a;
+          border: 1px solid #636363;
+          border-radius: 100%;
+          padding: 7px;
+        }
+    
+        .emoj-container {
+            background-color:  #295480cb;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #adadad;
+          width: 65px;
+          height: 62px;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+    
+        .emoj {
+          font-size: 48px;
+          
+
+        }
+
+
+
+</style>
+
+
+</section>
+
+      
+    <script>
+        function showPopup() {
+            const popup = document.createElement("div");
+            popup.style.position = "fixed";
+            popup.style.top = "50%";
+            popup.style.left = "50%";
+            popup.style.transform = "translate(-50%, -50%)";
+            popup.style.width = "50%";
+            popup.style.height = "50%";
+            popup.style.background = "#fff";
+            popup.style.border = "2px solid #000";
+            popup.style.borderRadius = "10px";
+            popup.style.display = "flex";
+            popup.style.justifyContent = "center";
+            popup.style.alignItems = "center";
+    
+            const okButton = document.createElement("button");
+            okButton.textContent = "OK";
+            okButton.style.padding = "10px 20px";
+            okButton.style.border = "2px solid #000";
+            okButton.style.borderRadius = "5px";
+            okButton.style.background = "#f0f0f0";
+            okButton.style.cursor = "pointer";
+            okButton.onclick = function() {
+                document.body.removeChild(popup);
+            };
+    
+            popup.appendChild(okButton);
+            document.body.appendChild(popup);
+        }
+    </script>
+    
+
+
+   
+
+    <!-- Floating Chat Button -->
+<div class="chat-button">
+    <a href="#" class="chat-link">
+        <i class="fas fa-robot"></i>
+    </a>
+</div>
+
+
+<style>
+ 
+  
+
+  </style>
+
+
+  
+  <div class="Capabilities" style=" margin-top: 50px; background-color: hwb(0 93% 7% / 0.846);"><br>
+
+    <h3 align="center" style="color: #29548094;">Available-Tools<i class="fas fa-tools" style="font-size: 18px;margin-left: 4px;"></i></h3>
+
+    <i class="fas fa-check-circle" style="font-size: 16px; color: #295480e0; margin-left: 32px; position: relative; top: 45px;"></i>
+      <div style="border: 0.5px solid #295480e0;
+    border-radius: 15px;
+    padding: 0px; width: 210px; margin-left: 77px;" >
+    <p style="font-size: 12.5px; margin-left: 30px;"><i class="fas fa-search" style="font-size: 13px; color: #295480e0 ; margin-right: 10px;"></i> Reverse Image Search</p>
+    <p style="font-size: 12.5px; margin-left: 30px;"><i class="fas fa-key" style="font-size: 13px; color: #295480e0 ; margin-right: 10px;"></i> Password Generator</p>
+    
+</div>
+
+
+<i class="fas fa-check-circle" style="font-size: 16px; color: #295480e0; margin-left:237px; position: relative; top: 45px;"></i>
+<div style="border: 0.5px solid #295480e0;
+border-radius: 15px;
+padding: 0px; width: 200px; margin-left: 18px;" >
+      <p style="font-size: 12.5px; margin-left: 35px;"><i class="fas fa-user-lock"  style="font-size: 12px; color: #295480e0 ; margin-right: 10px;"></i> Password Breach Eye</p>
+      <p style="font-size: 12.5px; margin-left: 35px;"><i class="fas fa-link"  style="font-size: 12px; color: #295480e0 ; margin-right: 10px;"></i> URL Shortener</p>
+</div>
+
+
+<i class="fas fa-check-circle" style="font-size: 16px; color: #295480e0; margin-left: 32px; position: relative; top: 45px;"></i>
+<div style="border: 0.5px solid #295480e0;
+border-radius: 15px;
+padding: 0px; width: 210px; margin-left: 78px;" >
+      <p style="font-size: 12px; margin-left: 30px;"><i class="fas fa-file-audio" style="font-size: 15px; color: #295480e0 ; margin-right: 6px;"></i> MP4 to MP3 Converter</p>
+      <p style="font-size: 12px; margin-left: 30px;"><i class="fas fa-file-audio"  style="font-size: 15px; color: #295480e0 ; margin-right: 6px;"></i> YouTube to MP3 Converter</p>
+</div>
+
+
+
+<i class="fas fa-check-circle" style="font-size: 16px; color: #295480e0; margin-left: 237px; position: relative; top: 45px;"></i>
+<div style="border: 0.5px solid #295480e0;
+border-radius: 15px;
+padding: 0px; width: 200px; margin-left: 18px;" >
+      <p style="font-size: 13px; margin-left: 35px;"><i class="fas fa-file-image" style="font-size: 15px; color: #295480e0 ; margin-right: 14px;"></i> Image Compressor</p>
+      <p style="font-size: 13px; margin-left: 35px;"><i class="fas fa-calendar-alt" style="font-size: 15px; color: #295480e0 ; margin-right: 13px;"></i> Date Calculator</p>
+</div>
+       
+
+
+
+<i class="fas fa-check-circle" style="font-size: 16px; color: #295480e0; margin-left: 32px; position: relative; top: 45px;"></i>
+<div style="border: 0.5px solid #295480e0;
+border-radius: 15px;
+padding: 0px; width: 210px; margin-left: 78px;" >
+      <p style="font-size: 13px; margin-left: 40px;"><i class="fas fa-envelope"  style="font-size: 15px; color: #295480e0 ; margin-right: 13px;"></i> Email Enhancer</p>
+      <p style="font-size: 13px; margin-left: 40px;"><i class="fas fa-map-marker-alt"  style="font-size: 15px; color: #295480e0 ; margin-right: 13px;"></i> IP Geolocation</p>
+</div><br>
+  </div>
+  
+<div id="how-to?">
+
+<h3 align="center">How To Use KnackPass Tools?</h3>
+
+
+</div>
+
+</div>
+
+<footer style="background-color: #c3c3c391; color: #3d3d3d; padding: 1px 1px; text-align: center; margin-top: 50px;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h3 style="color: #3b3b3b;">KnackPass</h3>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 1px;">
+      <a href="#" style="color: #343434; text-decoration: none; margin: 0 15px; font-size: 24px;">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" style="color: #4b4b4b; text-decoration: none; margin: 0 80px; font-size: 24px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" style="color: #3b3b3b; text-decoration: none; margin: 0 15px; font-size: 24px;">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p style="font-size: 12px; opacity: 0.8; margin-top: 10px;">&copy; 2023 KnackPass. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

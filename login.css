@@ -1,0 +1,223 @@
+
+.navbar {
+  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hwb(0 93% 7% / 0.541);
+    color: #424242;
+    padding: 10px;
+    position: relative; /* Add position relative to define stacking context */
+    z-index: 1; /* Add z-index to ensure the navbar is on top */
+  
+  }
+  
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    font-size: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login , .register{
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0.8px solid #4d4d4d8d;
+    border-radius: 5px;
+    margin-right: 22px;
+    cursor: pointer;
+  }
+  .burger {
+    display: none;
+    cursor: pointer;
+    padding: 2px;
+  }
+  
+  .line {
+    width: 20px;
+    height: 2.5px;
+    background-color:#424242;
+    margin: 4px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    padding: 10px;
+    position: relative; /* Add position relative to position the arrow icon */
+  }
+  
+  .nav-links li a {
+    color: #424242;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+  
+    .burger {
+        display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 90px;
+      left: 50px;
+      background-color: hwb(0 85% 15%);
+      width: 80%;
+      z-index: 100; /* Adjust the z-index to make the nav-links appear above the background */
+  }
+  
+    .nav-links li {
+        padding: 14px;
+        text-align: center;
+    }
+  
+    .nav-links li a {
+        color: #424242;
+    }
+  
+    .nav-links li .arrow {
+        position: absolute;
+        right: 35px; /* Adjust this value to position the arrow as per your preference */
+        font-size: 15px;
+        color: #5b5b5b;
+    }
+  
+    .show-menu {
+        display: flex;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 0px;
+   
+  }
+  
+  section {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 0.2rem;
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 500px;
+  
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+  
+    margin-bottom: 0.9rem;
+    text-align:left;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    align-self: center;
+    width: 98%;
+  
+    padding: 0.90rem;
+    margin-bottom: 1.9rem;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    border-color: #103664;
+    outline: none;
+  }
+  
+  .submit-btn {
+    align-self: center;
+    padding: 10px ;
+    border-radius: 4.5px;
+    border: none;
+    background-color: #8c8c8c;
+    color: #fff;
+    font-size: 0.90rem;
+    cursor: pointer;
+    width: 80%;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color:#8c8c8c;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+  
+    .login-container {
+        padding: 1.9rem;
+        border-radius: 5px;
+    }
+  
+    label {
+        font-size: 1.2rem;
+    }
+  
+    input[type="text"], input[type="password"], input[type="email"] {
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.25rem;
+    }
+  
+    .submit-btn {
+        padding: 0.4rem 0;
+        font-size: 1.9rem;
+       
+    }
+  }
+  
+  

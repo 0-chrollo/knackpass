@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="index.js"></script>
+    <title>TulProse-Login</title>
+  
+   
+  </head>
+    <body>
+
+
+     
+
+      <nav class="navbar">
+        
+        <div class="logo">
+            <a href="home.html">
+              <i class="fa fa-angle-left" style="color:#000000; font-size: 23px;"></i>
+            </a>
+        
+              <span class="company-name" style=" border: 3px solid #adadad; border-radius: 15px;margin-right: 11rem;">-kp-</span>
+          </div>
+          <div class="menu">
+           
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="home.html">Home <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">About <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">Services <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+            <li><a href="#">Contact <span class="arrow"><i class="fas fa-angle-right"></i></span></a></li>
+        </ul>
+    
+
+
+
+<section>
+  <style>
+   
+  
+    h1 {
+      font-size: 3rem; /* Adjust this value as needed */
+      margin-bottom: 50px;
+      color: #8c8c8c;
+    }
+  </style>
+  
+
+
+      <div class="login-container">
+
+          <h1><i class="fas fa-user-circle"></i></h1>
+      
+          <form method="POST" action="{{ url_for('login') }}" id="login-form">
+        
+              <label for="email" style="color: #545454;">Email</label>
+              <input type="email" id="email" name="email" required>
+              <label for="password" style="color: #545454;">Password</label>
+              <input type="password" id="password" name="password" required>
+  
+              <button type="submit" class="submit-btn">Submit</button>
+          </form>
+      </div>
+
+
+
+</section>
+
+<!--Important Account Creation side-->
+
+<div style="text-align: center; margin-top: 60px; font-size: 14px;">
+  <p>
+    <a href="#" style="text-decoration: none; color: rgb(5, 5, 96);">Forgot Password?</a> |
+    <a href="#" style="text-decoration: none; color: rgb(2, 2, 75);">Create Account</a>
+  </p>
+</div>
+
+<!--Done-->
+
+
+
+      <script>
+        document.getElementById('login-form').addEventListener('submit', async (event) => {
+          event.preventDefault();
+      
+          const form = event.target;
+          const formData = new FormData(form);
+      
+          try {
+            const response = await fetch(form.action, {
+              method: form.method,
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+      
+            const data = await response.json();
+      
+            if (data.error) {
+              alert(data.error);
+            } else {
+              // Redirect to the desired page after a successful login
+              window.location.href = '{{ url_for("home") }}';
+            }
+          } catch (error) {
+            console.error('Error:', error);
+          }
+        });
+
+
+
+
+        function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("show-menu");
+}
+
+
+
+
+      </script>
+
+
+<footer style="background-color: #d8d8d8; color: #3d3d3d; padding: 19.5px 1px; text-align: center; margin-top: 100px;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h3 style="color: #3b3b3b;">KnackPass</h3>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 1px;">
+      <a href="#" style="color: #343434; text-decoration: none; margin: 0 15px; font-size: 24px;">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" style="color: #4b4b4b; text-decoration: none; margin: 0 80px; font-size: 24px;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" style="color: #3b3b3b; text-decoration: none; margin: 0 15px; font-size: 24px;">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p style="font-size: 12px; opacity: 0.8; margin-top: 10px;">&copy; 2023 KnackPass. All rights reserved.</p>
+  </div>
+</footer>
+
+      
+  </body>
+</html>

@@ -138,7 +138,7 @@ body {
   .smiling-emoji {
       background-color: #d8d8d8;
     margin-top:auto;
-    font-size: 45px; /* Set the font size to adjust the size of the emoji */
+    font-size: 170%; /* Set the font size to adjust the size of the emoji */
     display: inline-block; /* Display the emoji as a block element */
     padding: 5px; /* Add padding to create the solid border around the emoji */
     border: 2px solid #c5c5c5; /* Solid border with 2px width around the emoji */

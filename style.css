@@ -16,15 +16,7 @@ body {
 
 }
 
-.logo img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
 
-.company-name {
-    font-size: 20px;
-}
 
 .menu {
     display: flex;
@@ -71,11 +63,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .logo img {
-        width: 25px;
-        height: 25px;
-    }
-
+    
     .burger {
         display: block;
     }
@@ -110,6 +98,11 @@ body {
     .show-menu {
         display: flex;
     }
+
+    .cont{
+ 
+        font-family:'Franklin Gothic Medium';
+      }
 }
 
 main {

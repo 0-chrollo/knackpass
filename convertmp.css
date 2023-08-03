@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hwb(0 93% 7% / 0.541);
+    color: #424242;
+    padding: 10px;
+    position: relative; /* Add position relative to define stacking context */
+    z-index: 1; /* Add z-index to ensure the navbar is on top */
+
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+   
+}
+
+.company-name {
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.line {
+    width: 20px;
+    height: 2.5px;
+    background-color:#424242;
+    margin: 4px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 10px;
+    position: relative; /* Add position relative to position the arrow icon */
+}
+
+.nav-links li a {
+    color: #424242;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 50px;
+        background-color: hwb(0 85% 15%);
+        width: 80%;
+        z-index: 100; /* Adjust the z-index to make the nav-links appear above the background */
+    }
+
+    .nav-links li {
+        padding: 14px;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        color: #424242;
+    }
+
+    .nav-links li .arrow {
+        position: absolute;
+        right: 35px; /* Adjust this value to position the arrow as per your preference */
+        font-size: 15px;
+        color: #5b5b5b;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+/* Tool Intro*/
+
+/* Base styles for the main element */
+.YT-Downloader{
+
+    margin-top: 50px;
+    border: 2px solid #b8b8b8; /* Solid border with 2px width */
+    border-radius: 10px; /* Border radius to create rounded corners */
+    padding: 7%; /* Add padding inside the main element */
+    text-align: center; /* Center text horizontally inside the main element */
+    width: 90%; /* Set the initial width */
+    max-width: 400px; /* Set a maximum width to avoid touching the sides */
+    margin: 0 auto; /* Center the main element horizontally */
+  }
+  
+  /* Media queries for responsive design */
+  /* Adjust the width and margins based on device screen size */
+  @media only screen and (max-width: 768px) {
+    .YT-Downloader {
+      margin-top: 30px;
+      width: 80%; /* Decrease width for smaller screens */
+      max-width: 300px; /* Adjust the maximum width for smaller screens */
+    }
+  }
+  
+  .smiling-emoji {
+      background-color: #d8d8d8;
+    margin-top:auto;
+    font-size: 170%; /* Set the font size to adjust the size of the emoji */
+    display: inline-block; /* Display the emoji as a block element */
+    padding: 10px; /* Add padding to create the solid border around the emoji */
+    border: 2px solid #c5c5c5; /* Solid border with 2px width around the emoji */
+    border-radius: 50%; /* Border radius to create a circle around the emoji */
+  }
+  

@@ -58,4 +58,4 @@ For questions, support, and discussions, join our developer community on [Discor
 
 ## License
 
-KnackPass is open-source and released under the [MIT License](LICENSE.md).
+KnackPass is open-source and released under the [MIT License](LICENSE).

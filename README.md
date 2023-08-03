@@ -10,7 +10,7 @@
 KnackPass is an Open Source Software that aims to provide users with a comprehensive collection of reliable online web tools. Our mission is to empower users by offering a platform that consolidates various tasks, eliminating the need to rely on different platforms for different purposes. Allows multiple developers to contribute and create various tools on different pages of the same site. The platform also aims to provide a collaborative and community-driven environment where developers can create various innovative tools.
 
 
-##Key Features
+## Key Features
 
 -Open Source: KnackPass is open-source software, meaning that the source code is freely available for anyone to use, modify, and distribute.
 
@@ -54,7 +54,7 @@ Developers can implement their own ads on their respective tool pages. Please fo
 
 ## Community Support
 
-For questions, support, and discussions, join our developer community on [Discord](https://example.com/knackpass-slack)
+For questions, support, and discussions, join our developer community on [Discord](https://example.com/knackpass-slack).
 
 ## License
 

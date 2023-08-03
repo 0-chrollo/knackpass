@@ -54,7 +54,7 @@ Developers can implement their own ads on their respective tool pages. Please fo
 
 ## Community Support
 
-For questions, support, and discussions, join our developer community on [Discord](https://example.com/knackpass-slack).
+For questions, support, and discussions, join our developer community on [Discord](https://example.com/knackpass-slack)
 
 ## License
 

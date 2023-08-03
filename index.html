@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="index.js"></script>
 
-    <title>TulProse-Home</title>
+    <title>KnackPass-Home</title>
 </head>
 <body>
 
@@ -40,11 +40,11 @@
     display: inline-block;
     background-color: #295480c8;
     border-radius: 100px;
-    padding: 1px; /* Adjust padding as needed */
-    width: 35px; /* Set the width of the logo container */
-    height: 35px; /* Set the height of the logo container */
+    padding: 1px; 
+    width: 35px; 
+    height: 35px; 
     background-image: url("KP.png");
-    background-size: 170%; /* Decrease the image size using the background-size property */
+    background-size: 170%; 
     background-position:52% -71px;
   }
           </style>
@@ -198,24 +198,134 @@
         }
 
       </style>
+
+
+
+<script>
+    // Function to show the popup when the "View Answer" button is clicked
+    function showPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    // Function to close the popup when the "OK" button is clicked
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+
+    // Add an event listener to the "View Answer" button to trigger the popup
+    document.querySelector(".why?").addEventListener("click", showPopup);
+
+
+
+//The Second//
+
+
+    function ThePopup() {
+      document.getElementById("Thepop").style.display = "block";
+    }
+
+    // Function to close the popup when the "OK" button is clicked
+    function TheclosePop() {
+      document.getElementById("Thepop").style.display = "none";
+    }
+
+    // Add an event listener to the "View Answer" button to trigger the popup
+    document.queryselector(".what?").addEventListener("onclick", ThePopup);
+
+
+
+
+
+  </script>
+
     </head>
     <body>
       <section>
         <div class="navigation-icons">
-          <div style="margin-bottom: 5px;">
-            <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+            <div style="margin-bottom: 5px;">
+              <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+            </div>
+            <div style="margin-top: 5px;">
+              <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+            </div>
           </div>
-          <div style="margin-top: 5px;">
-            <i class="fas fa-question" style="font-size: 12px; color: #ffffff;"></i>
+          <div class="emoji-container">
+            <div class="emoji">🤔</div>
           </div>
-        </div>
-        <div class="emoji-container">
-          <div class="emoji">🤔</div>
-        </div>
-        <h4 style="color: #7a7a7a; font-size: 13.5px;">Why would you even consider using KnackPass Tools?</h4>
-        <div style="margin-top: 25px;">
-          <button onclick="showPopup()" style="border: 0.8px solid #a2a2a2; padding: 8px 15px; background-color: #295480cb; border-radius: 5px; cursor: pointer; color: rgb(221, 221, 221); font-size: 12px;">View Answer !</button>
-        </div>
+          <h4 style="color: #7a7a7a; font-size: 13.5px;">Why would you even consider using KnackPass Tools?</h4>
+          <div style="margin-top: 25px;">
+            <button  onclick="showPopup()"class="why?" style="border: 0.8px solid #a2a2a2; padding: 8px 15px; background-color: #295480cb; border-radius: 5px; cursor: pointer; color: rgb(221, 221, 221); font-size: 12px;">View Answer !</button>
+          </div>
+        
+
+
+<div class="popup-container" id="popup">
+ <div class="popup-emoji">😄</div>
+<div class="popup-text">To Unlock the power of efficiency with KnackPass tools! Say goodbye to the hassle of juggling between multiple platforms. Our user-friendly hub offers a wide range of reliable web tools, making daily tasks a breeze. Embrace convenience, save time, and boost productivity with KnackPass - Your one-stop solution for seamless online experiences!</div>
+<button class="popup-button" onclick="closePopup()">OK</button>
+</div>
+
+
+
+
+
+
+        <style>
+            /* Styles for the popup container */
+            .popup-container {
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 50%;
+              height: 30%;
+              background-color: #f1f1f1;
+              border-radius: 10px;
+              text-align: center;
+              padding: 60px;
+              z-index: 100;
+            }
+        
+            /* Styles for the emoji and text inside the popup */
+            .popup-emoji {
+              font-size: 36px;
+              margin-bottom: 10px;
+            }
+        
+            .popup-text {
+              color: #7a7a7a;
+              font-size: 13.5px;
+              margin-bottom: 20px;
+            }
+        
+            /* Style for the "OK" button inside the popup */
+            .popup-button {
+              border: none;
+              padding: 8px 15px;
+              background-color: #295480cb;
+              border-radius: 5px;
+              cursor: pointer;
+              color: #ddd;
+              font-size: 12px;
+            }
+          </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -240,8 +350,77 @@
       </div>
       <h4 style="color: #0d2945ad; font-size: 14px;">What separates our tools from the others?</h4>
       <div style="margin-top: 25px;">
-        <button onclick="showPopup()" style="border: 0.8px solid #a2a2a2; padding: 8px 15px; background-color: #7a7a7a;border-radius: 5px; cursor: pointer; color: rgb(221, 221, 221); font-size: 12px;">View Answer !</button>
+        <button  onclick="ThePopup()"class="what?" style="border: 0.8px solid #a2a2a2; padding: 8px 15px; background-color: #295480cb; border-radius: 5px; cursor: pointer; color: rgb(221, 221, 221); font-size: 12px;">View Answer !</button>
       </div>
+
+
+
+      <div class="pop-container" id="Thepop">
+        <div class="pop-emoji">😄</div>
+       <div class="pop-text">To discover the magic of KnackPass tools, setting them apart from the rest! Our tools are meticulously crafted with user-centric design, ensuring seamless functionality and unparalleled ease-of-use. Embrace innovation as our vast collection of reliable web tools empowers you to achieve tasks effortlessly. </div>
+       <button class="pop-button" onclick="TheclosePop()">OK</button>
+       </div>
+       
+
+
+
+
+
+       <style>
+        /* Styles for the popup container */
+        .pop-container {
+          display: none;
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 50%;
+          height: 30%;
+          background-color: #f1f1f1;
+          border-radius: 10px;
+          text-align: center;
+          padding: 60px;
+          z-index: 100;
+        }
+    
+        /* Styles for the emoji and text inside the popup */
+        .pop-emoji {
+          font-size: 36px;
+          margin-bottom: 10px;
+        }
+    
+        .pop-text {
+          color: #7a7a7a;
+          font-size: 13.5px;
+          margin-bottom: 20px;
+        }
+    
+        /* Style for the "OK" button inside the popup */
+        .pop-button {
+          border: none;
+          padding: 8px 15px;
+          background-color: #295480cb;
+          border-radius: 5px;
+          cursor: pointer;
+          color: #ddd;
+          font-size: 12px;
+        }
+      </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <style>
 
@@ -304,37 +483,7 @@
 </section>
 
       
-    <script>
-        function showPopup() {
-            const popup = document.createElement("div");
-            popup.style.position = "fixed";
-            popup.style.top = "50%";
-            popup.style.left = "50%";
-            popup.style.transform = "translate(-50%, -50%)";
-            popup.style.width = "50%";
-            popup.style.height = "50%";
-            popup.style.background = "#fff";
-            popup.style.border = "2px solid #000";
-            popup.style.borderRadius = "10px";
-            popup.style.display = "flex";
-            popup.style.justifyContent = "center";
-            popup.style.alignItems = "center";
-    
-            const okButton = document.createElement("button");
-            okButton.textContent = "OK";
-            okButton.style.padding = "10px 20px";
-            okButton.style.border = "2px solid #000";
-            okButton.style.borderRadius = "5px";
-            okButton.style.background = "#f0f0f0";
-            okButton.style.cursor = "pointer";
-            okButton.onclick = function() {
-                document.body.removeChild(popup);
-            };
-    
-            popup.appendChild(okButton);
-            document.body.appendChild(popup);
-        }
-    </script>
+  
     
 
 
@@ -407,12 +556,12 @@ padding: 0px; width: 210px; margin-left: 23%;" >
       <p style="font-size: 13px; margin-left: 40px;"><i class="fas fa-envelope"  style="font-size: 15px; color: #295480e0 ; margin-right: 13px;"></i> Email Enhancer</p>
       <p style="font-size: 13px; margin-left: 40px;"><i class="fas fa-map-marker-alt"  style="font-size: 15px; color: #295480e0 ; margin-right: 13px;"></i> IP Geolocation</p>
 </div><br>
-  </div>
+  </div> <br>
   
-<div id="how-to?">
+<br><div align="center" id="how-to?">
 
-<h3 align="center">How To Use KnackPass Tools?</h3>
 
+<quote >"How To Use KnackPass?" Section will be uploaded</quote>
 
 </div>
 

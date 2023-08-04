@@ -12,11 +12,11 @@ KnackPass is an Open Source Software that aims to provide users with a comprehen
 
 ## Key Features
 
--Open Source: KnackPass is open-source software, meaning that the source code is freely available for anyone to use, modify, and distribute.
+- Open Source: KnackPass is open-source software, meaning that the source code is freely available for anyone to use, modify, and distribute.
 
--User-Friendly: The platform is designed to be intuitive and easy to navigate, ensuring a seamless user experience for everyone.
+- User-Friendly: The platform is designed to be intuitive and easy to navigate, ensuring a seamless user experience for everyone.
 
--Free Access: We believe that access to reliable online tools should be available to everyone, so KnackPass provides all its features for free.
+- Free Access: We believe that access to reliable online tools should be available to everyone, so KnackPass provides all its features for free.
 
 ## Table of Contents
 
@@ -37,8 +37,7 @@ KnackPass was created to bring together talented developers from all over the wo
 To get started with contributing to KnackPass, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/your-username/knackpass.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
+   
 
 ## Contribution Guidelines
 

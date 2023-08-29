@@ -1,11 +1,9 @@
 
 .navbar {
-  
-
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
+  
     color: #424242;
     padding: 10px;
     position: relative; /* Add position relative to define stacking context */
@@ -108,116 +106,5 @@
         display: flex;
     }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  * {
-    box-sizing: border-box;
-    margin: 1px;
-    padding: 0px;
-   
-  }
-  
-  section {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    padding: 0.2rem;
-  }
-  
-  .login-container {
-    width: 100%;
-    max-width: 500px;
-  
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-  
-    margin-bottom: 0.9rem;
-    text-align:left;
-  }
-  
-  input[type="text"], input[type="password"], input[type="email"] {
-    align-self: center;
-    width: 98%;
-  
-    padding: 0.90rem;
-    margin-bottom: 1.9rem;
-    border-radius: 5px;
-    border: 1px solid #d9d9d9;
-  }
-  
-  input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-    border-color: #103664;
-    outline: none;
-  }
-  
-  .submit-btn {
-    align-self: center;
-    padding: 10px ;
-    border-radius: 4.5px;
-    border: none;
-    background-color: #8c8c8c;
-    color: #fff;
-    font-size: 0.30rem;
-    cursor: pointer;
-    width: 80%;
-    transition: background-color 0.3s;
-  }
-  
-  .submit-btn:hover {
-    background-color:#8c8c8c;
-  }
-  
-  .error-message {
-    color: #e74c3c;
-    margin-bottom: 1rem;
-  }
-  
-  @media screen and (max-width: 480px) {
-    body {
-        font-size: 0.99rem;
-    }
-  
-    .login-container {
-        padding: 1.9rem;
-        border-radius: 5px;
-    }
-  
-    label {
-        font-size: 1.2rem;
-    }
-  
-    input[type="text"], input[type="password"], input[type="email"] {
-        padding: 0.5rem;
-        margin-bottom: 2rem;
-        font-size: 1.25rem;
-    }
-  
-    .submit-btn {
-        padding: 0.70rem 0;
-        font-size: 1rem;
-       
-    }
-  }
-  
+
   

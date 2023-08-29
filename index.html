@@ -3,15 +3,10 @@
 <head>
 
     <!--Favcon Section-->
-
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-
-
     <!--Ends Here-->
 
     <meta charset="UTF-8">
@@ -21,7 +16,7 @@
     <script src="index.js"></script>
 
     <title>KnackPass-Home</title>
-</head>
+</head> 
 <body>
 
 
@@ -61,7 +56,7 @@
 
 
         <div class="menu">
-            <span class="register" >Register</span>
+            <span class="register" ><a href="register.html" style="color: black; text-decoration: none;">Register</a></span>
         <span class="login" > <a href="login.html" style="color: black; text-decoration: none;">Login</a></span>
             <div class="burger" onclick="toggleMenu()">
                 <div class="line"></div>
@@ -87,7 +82,7 @@
         <div class="site-intro">
             <h1>KnackPass</h1>
             <p><i class="fas fa-check-circle" style="color: black;margin-right: 8px;"></i> Efficient. User-Friendly.</p>
-            <p><i class="fas fa-lock" style="color: black;margin-right: 8px;"></i> End-to-End Encrypted. Secured.</p>
+
             <p><i class="fas fa-tools" style="color: black;margin-right: 8px;"></i> Productivity and Security Tools.</p>
             <p><i class="fas fa-hourglass-half" style="color: black;margin-right: 8px;"></i> Save Time and Effort.</p>
 
@@ -99,9 +94,9 @@
 
 
              <p><i class="fas fa-rocket" style="color: black; margin-right: 8px;"></i> Seamless Integration.</p>
-             <p><i class="fas fa-robot" style="color: black;margin-right: 8px;"></i> With AI Embedded Tools.</p>
+
              <p><i class="fas fa-magic" style="color: black;margin-right: 8px;"></i> Intuitive Interface.</p>
-             <p><i class="fas fa-shield-alt" style="color: black;margin-right: 8px;"></i> End-to-End Encrypted.</p>
+
              
             <div class="button-container">
                 <button class="blue-button">
@@ -261,7 +256,7 @@
 
 <div class="popup-container" id="popup">
  <div class="popup-emoji">😄</div>
-<div class="popup-text">To Unlock the power of efficiency with KnackPass tools! Say goodbye to the hassle of juggling between multiple platforms. Our user-friendly hub offers a wide range of reliable web tools, making daily tasks a breeze. Embrace convenience, save time, and boost productivity with KnackPass - Your one-stop solution for seamless online experiences!</div>
+<div class="popup-text">To Unlock the power of efficiency with KnackPass tools! Say goodbye to the hassle of juggling between multiple platforms. Our user-friendly hub offers a wide range of reliable web tools, making daily tasks a breeze. Embrace convenience, save time, and boost productivity with KnackPass!.</div>
 <button class="popup-button" onclick="closePopup()">OK</button>
 </div>
 
@@ -278,12 +273,11 @@
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              width: 50%;
-              height: 30%;
+              width: 85%;
               background-color: #f1f1f1;
               border-radius: 10px;
               text-align: center;
-              padding: 60px;
+              padding: 5px 3px;
               z-index: 100;
             }
         
@@ -491,7 +485,7 @@
 
     <!-- Floating Chat Button -->
 <div class="chat-button">
-    <a href="#" class="chat-link">
+    <a href="prosbot.html" class="chat-link">
         <i class="fas fa-robot"></i>
     </a>
 </div>

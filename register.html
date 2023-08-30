@@ -165,9 +165,7 @@ input[type="submit"]:hover {
 
       <div class="logo">KnackPass</div>
       <form method="POST" action="/signin">
-          {% if error_message %}
-          <div class="error-message">{{ error_message }}</div>
-          {% endif %}
+       
           <label for="username">Username</label>
           <input type="text" id="username" name="username" required>
         
